@@ -1,0 +1,38 @@
+<html>
+
+    {{> common/head}}
+
+    <body>
+        <div class="container">
+            {{> common/header}}
+            {{> common/nav-bar}}
+            <div class="content">
+                <div class="main">
+                    <div align="center">
+                        <h1>Leagues</h1>
+                        <table id="hor-minimalist-b">
+                            <thead>
+                            <tr>
+                                <th align="center">
+
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {{#each this}}
+                                <tr>
+                                    <td align="center">
+                                        <a href="leagues/{{id}}">{{caption}}</a>
+                                    </td>
+                                </tr>
+                            {{/each}}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            {{> common/footer}}
+        </div>
+    </body>
+
+</html>

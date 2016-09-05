@@ -1,0 +1,34 @@
+<html>
+
+{{> common/head}}
+
+<body>
+<div class="container">
+    {{> common/header}}
+    {{> common/nav-bar}}
+    <div class="content">
+        <div class="main">
+            <div align="center">
+                <h1>{{name}}</h1>
+                <hr>
+                <img alt="Crest Symbol" src="{{crestUrl}}" height="200" width="200">
+                <hr>
+                <ul class="list-unstyled">
+                    <li><b>Team Name</b></li>
+                    <li>{{name}}</li>
+                    <li><b>Short Name</b></li>
+                    <li>{{shortName}}</li>
+                    <li><b>Code</b></li>
+                    <li>{{code}}</li>
+                    <li><b>Market Value</b></li>
+                    <li>{{squadMarketValue}}</li>
+                    <li><a href="./../players/{{id}}">Players</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    {{> common/footer}}
+</div>
+</body>
+
+</html>

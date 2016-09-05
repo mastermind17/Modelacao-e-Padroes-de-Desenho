@@ -1,0 +1,49 @@
+<html>
+
+{{> common/head}}
+
+<body>
+<div class="container">
+    {{> common/header}}
+    {{> common/nav-bar}}
+    <div class="content">
+        <div class="main">
+            <div align="center">
+                <table id="hor-minimalist-b">
+                    <thead>
+                    <tr>
+                        <th align="center">Position</th>
+                        <th align="center">Team</th>
+                        <th align="center">Games</th>
+                        <th align="center">Points</th>
+                        <th align="center">Goals</th>
+                        <th align="center">Wins</th>
+                        <th align="center">Draws</th>
+                        <th align="center">Losses</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {{#each this}}
+                        <tr>
+                            <td align="center">{{position}}</td>
+                            <td align="center">
+                                <a href="./../teams/{{teamId}}">{{teamName}}</a>
+                            </td>
+                            <td align="center">{{playedGames}}</td>
+                            <td align="center">{{points}}</td>
+                            <td align="center">{{goals}}</td>
+                            <td align="center">{{wins}}</td>
+                            <td align="center">{{draws}}</td>
+                            <td align="center">{{losses}}</td>
+                        </tr>
+                    {{/each}}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    {{> common/footer}}
+</div>
+</body>
+
+</html>
